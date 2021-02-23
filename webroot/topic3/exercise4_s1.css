@@ -1,0 +1,93 @@
+body{
+  background-color: blue;
+
+}
+
+h1{
+  font-size: 30pt;
+  text-align: left;
+  font-style: normal;
+  font-family:sans-serif;
+  color: white;
+  text-decoration: underline;
+  border: 5px outset maroon;
+  background-color: red;
+  border-bottom:  double;
+}
+h2{
+  font-size: 20pt;
+  text-align:left;
+  font-style: normal;
+  font-family:sans-serif;
+  color: white;
+  border: 5px outset maroon;
+  background-color: red;
+  border-bottom:  double;
+
+  text-decoration: underline;
+}
+h3{
+  font-size: 16pt;
+  text-align: left;
+  font-style: normal;
+  font-family:fantasy,sans-serif;
+  color: white;
+  text-decoration: underline;
+
+}
+header{
+  color: white;
+  padding: 20pt;
+  margin:0;
+}
+p,a{
+  font-size: 12pt;
+  font-family: cursive, sans-serif;
+}
+
+li {
+
+  display:inline-block;
+  margin-left:10px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: left;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  padding:6pt 16pt;
+}
+div{
+margin-left: 25pt;
+margin-right: 25pt;
+}
+li a:hover {
+  background-color: red;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14pt 16pt;
+  text-decoration: none;
+}
