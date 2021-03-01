@@ -1,0 +1,41 @@
+table, th, td, tr {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+  font-size: 20pt;
+  text-align: center;
+  font-style: normal;
+  font-family:serif;
+  color: black;
+  text-decoration: underline;
+  border: 5px outset darkblue;
+  background-color: blue;
+  border-bottom:  double;
+}
+
+th{
+  font-size: 14pt;
+  font-style: normal;
+  font-family: cursive;
+  color: white;
+  background-color: grey;
+  text-decoration: underline;
+}
+body{
+  background-color: darkgrey;
+}
+
+td{
+  text-align: center;
+  font-size: 12pt;
+  font-style: normal;
+  font-family: cursive;
+  color: white;
+  background-color: grey;
+
+}
