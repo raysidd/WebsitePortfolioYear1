@@ -1,6 +1,9 @@
 table, th, td, tr {
-  border: 2px solid black;
-  border-collapse: collapse;
+  border: 1px solid black;
+  border-collapse: separate;
+
+
+  outline-color: white;
 }
 table{
   margin-left: auto;
@@ -10,8 +13,8 @@ h1{
   font-size: 20pt;
   text-align: center;
   font-style: normal;
-  font-family:serif;
-  color: black;
+  font-family:sans-serif;
+  color: white;
   text-decoration: underline;
   border: 5px outset darkblue;
   background-color: blue;
@@ -24,18 +27,21 @@ th{
   font-family: cursive;
   color: white;
   background-color: grey;
-  text-decoration: underline;
+  font-weight: bold;
+  border-spacing: 10pt;
+
 }
 body{
   background-color: darkgrey;
 }
-
 td{
+  background-color: white;
   text-align: center;
+  font-family: monospace;
   font-size: 12pt;
-  font-style: normal;
-  font-family: cursive;
-  color: white;
-  background-color: grey;
 
+}
+
+img{
+   border-radius: 20pt;
 }
