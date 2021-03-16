@@ -1,0 +1,222 @@
+.title{
+  float: left;
+  font-size: 20pt;
+  font-style: normal;
+  font-family: sans-serif;
+  color: black;
+  padding-right: 5pt;
+}
+.topnav {
+  overflow: hidden;
+  background-color: lightgreen;
+}
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+
+}
+.topnav a:hover {
+  background-color: limegreen;
+  color: blue;
+}
+.aside{
+  float: left;
+  width: 15em;
+      background-color: beige;
+      position: relative;
+      top: 40px;
+      height: 7em;
+      text-align: left;
+
+}
+
+.aside p{
+  font-size: 12pt;
+  font-family: sans-serif;
+  color:brown;
+  padding: 4px 8px;
+}
+.aside h4{
+  font-size: 12pt;
+  font-family: sans-serif;
+  color:brown;
+  padding: 4px 8px;
+}
+
+
+
+.movies{
+
+float: right;
+width: 15em;
+border: solid 15pt #D3D3D3;
+position: relative;
+bottom: 400px;
+left:250px;
+background-color: white;
+padding-top: 5pt;
+padding-bottom: 5pt;
+
+}
+
+.movies li{
+  font-size: 12pt;
+  font-family: sans-serif;
+  padding: 4px 8px;
+}
+.movies h4{
+  font-size: 12pt;
+  font-family: sans-serif;
+  background-color: green;
+  padding: 4px 8px;
+}
+.bottomnav ul {
+  float: left;
+  position: relative;
+  bottom: 250px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15em;
+  background-color: grey;
+
+}
+
+.bottomnav li  {
+  display: block;
+  color: white;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+.bottomnav a{
+  display: block;
+  color: white;
+  padding: 4px 8px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+/* Change the link color on hover */
+.bottomnav li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.aboutme{
+  margin-left: 17em;
+  margin-right: 17em;
+  float: left;
+ border-bottom: 1pt solid black;
+ position: relative;
+ bottom: 100px;
+ left:30px;
+}
+
+.aboutme p{
+position: relative;
+bottom: 30px;
+font-size: 12pt;
+font-family: sans-serif;
+}
+.img{
+  border-bottom: 1pt solid black;
+margin-left: 17em;
+margin-right: 17em;
+position: relative;
+float:right;
+}
+.education{
+
+  float: left;
+
+ position: relative;
+ bottom: 100px;
+ left:300px;
+padding-top: 15pt;
+}
+.education p{
+  font-size: 12pt;
+  font-family: sans-serif;
+  
+}
+.hobbies{
+
+float: right;
+width: 15em;
+border: solid 15pt #D3D3D3;
+position: relative;
+bottom: 80px;
+right:30px;
+background-color: white;
+padding-top: 5pt;
+padding-bottom: 5pt;
+
+}
+
+.hobbies li{
+  font-size: 12pt;
+  font-family: sans-serif;
+  padding: 4px 8px;
+  text-align: left;
+}
+.hobbies h4{
+  font-size: 12pt;
+  font-family: sans-serif;
+  background-color: green;
+  padding: 4px 8px;
+}
+h3{
+
+
+  font-size: 18pt;
+  font-family: sans-serif;
+  position: relative;
+  left:300px;
+  top:70px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+figure{
+  float: right;
+  position: relative;
+  top: 110px;
+  left: 240px;
+}
+.skills{
+  float: left;
+  width: 15em;
+  border: solid 15pt #D3D3D3;
+  position: relative;
+  bottom: 50px;
+  right:250px;
+  background-color: white;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+}
+.skills li{
+
+}
+
+.skills h4{
+  background-color: green;
+  position:relative;
+  font-size: 12pt;
+  font-family: sans-serif;
+    padding: 4px 8px;
+
+
+}
