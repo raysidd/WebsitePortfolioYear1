@@ -1,0 +1,121 @@
+
+<!-- saved from url=(0081)file:///C:/Users/Ray/IdeaProjects/MiniprojectLvl3/exportToHTML/MiniLvl3.java.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MiniLvl3.java</title>
+
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table cellspacing="0" cellpadding="5" cols="1" width="100%" bgcolor="#606060">
+<tbody><tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MiniLvl3.java</font>
+</center></td></tr></tbody></table>
+<pre><span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+<span class="s0">class </span><span class="s1">Recipe{</span>
+    <span class="s1">String Food</span><span class="s0">;</span>
+    <span class="s1">String Ingredients</span><span class="s0">;</span>
+    <span class="s0">int </span><span class="s1">Servings</span><span class="s0">;</span>
+<span class="s1">}</span>
+<span class="s0">public class </span><span class="s1">MiniLvl3 {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">String Question = introMessage()</span><span class="s0">;</span>
+        <span class="s1">Message(Question)</span><span class="s0">;</span>
+        <span class="s1">CorrectMessage()</span><span class="s0">;</span>
+        <span class="s1">RecipeContent()</span><span class="s0">;</span>
+        <span class="s1">contMessage()</span><span class="s0">;</span>
+        <span class="s1">EndMessage()</span><span class="s0">;</span>
+
+        <span class="s1">System.exit(</span><span class="s2">0</span><span class="s1">)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static </span><span class="s1">String introMessage() {</span>
+        <span class="s1">Scanner scanner = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s3">"Hi there, I'm Chatbot."</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s3">"Try asking me a question about cooking recipes"</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s0">return </span><span class="s1">scanner.nextLine()</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+
+    <span class="s0">public static void </span><span class="s1">Message(String Question) {</span>
+        <span class="s1">System.out.println(</span><span class="s3">"You asked  " </span><span class="s1">+ Question + </span><span class="s3">"," </span><span class="s1">+ </span><span class="s3">"correct?"</span><span class="s1">)</span><span class="s0">;</span>
+
+    <span class="s1">}</span>
+
+    <span class="s0">public static </span><span class="s1">String CorrectMessage() {</span>
+        <span class="s1">String Decision</span><span class="s0">;</span>
+        <span class="s1">Scanner scanner = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s1">String text_input = scanner.nextLine()</span><span class="s0">;</span>
+        <span class="s1">Decision = text_input</span><span class="s0">;</span>
+        <span class="s0">if </span><span class="s1">(Decision.equals(</span><span class="s3">"Correct"</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s3">"Bringing up the current recipes available."</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else </span><span class="s1">{</span>
+            <span class="s1">System.out.println(</span><span class="s3">"Sorry, could you please try again."</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+        <span class="s0">return </span><span class="s1">text_input</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static </span><span class="s1">Recipe RecipeInput(String Food</span><span class="s0">, </span><span class="s1">String Ingredients</span><span class="s0">, int </span><span class="s1">Servings) {</span>
+        <span class="s1">Recipe N = </span><span class="s0">new </span><span class="s1">Recipe()</span><span class="s0">;</span>
+        <span class="s1">N.Food = Food</span><span class="s0">;</span>
+        <span class="s1">N.Ingredients = Ingredients</span><span class="s0">;</span>
+        <span class="s1">N.Servings = Servings</span><span class="s0">;</span>
+        <span class="s0">return </span><span class="s1">N</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">RecipeContent() {</span>
+        <span class="s1">Recipe Pizza = RecipeInput(</span><span class="s3">"Pizza"</span><span class="s0">, </span><span class="s3">"1kg Pizza Dough,500g Tomato Paste &amp; 500g Mozzarella Cheese"</span><span class="s0">, </span><span class="s2">8</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Recipe FriedChicken = RecipeInput(</span><span class="s3">"Fried Chicken"</span><span class="s0">, </span><span class="s3">"850g Chicken, 125g Chicken Fry Mix"</span><span class="s0">, </span><span class="s2">10</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Recipe FriedRice = RecipeInput(</span><span class="s3">"Fried Rice"</span><span class="s0">, </span><span class="s3">"1kg Rice, 500g Mixed Vegetables, 2 tbsp Salt"</span><span class="s0">, </span><span class="s2">12</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">Scanner scanner = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s3">"We have the recipes of the following foods:"</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(Pizza.Food)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(FriedChicken.Food)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(FriedRice.Food)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s3">"Which of the following dishes would you like to know about"</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">String text_input = scanner.nextLine()</span><span class="s0">;</span>
+
+        <span class="s0">if </span><span class="s1">(text_input.equals(</span><span class="s3">"Pizza"</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s3">"The ingredients required are: " </span><span class="s1">+ Pizza.Ingredients + </span><span class="s3">" and this dish serves" </span><span class="s1">+ Pizza.Servings + </span><span class="s3">" people."</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">(text_input.equals(</span><span class="s3">"Fried Chicken"</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s3">"The ingredients required are: " </span><span class="s1">+ FriedChicken.Ingredients + </span><span class="s3">" and this dish serves " </span><span class="s1">+ FriedChicken.Servings + </span><span class="s3">" people."</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if </span><span class="s1">(text_input.equals(</span><span class="s3">"Fried Rice"</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s3">"The ingredients required are: " </span><span class="s1">+ FriedRice.Ingredients + </span><span class="s3">" and this dish serves " </span><span class="s1">+ FriedRice.Servings + </span><span class="s3">" people."</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else </span><span class="s1">System.out.println(</span><span class="s3">"Sorry we don't have a recipe for that :("</span><span class="s1">)</span><span class="s0">;</span>
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">contMessage() {</span>
+        <span class="s1">Scanner scanner = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s1">System.out.println(</span><span class="s3">"Would you like to know about the other two dishes?"</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">String text_input = scanner.nextLine()</span><span class="s0">;</span>
+
+        <span class="s0">while </span><span class="s1">(</span><span class="s0">true</span><span class="s1">) {</span>
+            <span class="s0">if </span><span class="s1">(text_input.equals(</span><span class="s3">"Yes"</span><span class="s1">)) </span><span class="s0">;</span>
+
+            <span class="s1">RecipeContent()</span><span class="s0">;</span>
+            <span class="s1">RecipeContent()</span><span class="s0">;</span>
+            <span class="s0">break;</span>
+        <span class="s1">}</span>
+
+
+    <span class="s1">}</span>
+
+    <span class="s0">public static void </span><span class="s1">EndMessage() {</span>
+        <span class="s1">Scanner scanner = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+        <span class="s1">String text_input = scanner.nextLine()</span><span class="s0">;</span>
+        <span class="s0">if </span><span class="s1">(text_input.equals(</span><span class="s3">"No"</span><span class="s1">)) {</span>
+            <span class="s1">System.out.println(</span><span class="s3">"Goodbye, have a great day!"</span><span class="s1">)</span><span class="s0">;</span>
+            <span class="s1">System.exit(</span><span class="s2">0</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+
+</body></html>
