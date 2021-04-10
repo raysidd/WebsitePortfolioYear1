@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  include("login_db.php");
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
@@ -12,8 +16,8 @@
           <li><a href="aboutme.html">About Me</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="contactme.html">Contact Me</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="login.html">Log In</a></li>
+          <li><a href="portfolio.html">Projects</a></li>
+          <li><a href="login.php">Log In</a></li>
           <li><a href="blog.html">Blog</a></li>
     </ul>
   </nav>
@@ -23,14 +27,14 @@
 <body>
 <div class="csimage">
 
-    <form>
+    <form action = "" method = "post">
         <div class="container">
             <center> <h1> Log in to your Account </h1> </center>
             <label>Username : </label>
-            <input type="text" placeholder="example@email.com" name="username" required>
+            <input type="text" placeholder="example@email.com" name="Username"  required>
             <label>Password : </label>
-            <input type="password" placeholder="password" name="password" required>
-            <center><button class="login-button"type="submit">Login</button></center>
+            <input type="password" placeholder="password" name="Password" required>
+            <center><button class="login-button"type="submit" name="submit" id="submit">Login</button></center>
 
             Forgot <a href="forgetpw.html"> password? </a>
         </div>

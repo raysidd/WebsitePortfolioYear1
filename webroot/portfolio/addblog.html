@@ -24,8 +24,27 @@
 <body>
 <div class="background">
 
-<center><button class="button addblog-link"><a href = "addblog.html">Add Blog</a></button></center>
+    <div class="container-2">
+      <div id = "error"></div>
+<form id= "blogEntry" action="#" method="post">
+
+
+
+      <label for="fname">Topic</label>
+      <input type="text" id="topic" name="topic" placeholder="Write a topic..." >
+
+      <label for="subject">Comment</label>
+      <textarea type= "text" id="comment" name="comment" placeholder="Write something.." style="height:200px"></textarea>
+
+      <center><input id="submit" type="submit" name= "Submit" value="Submit"></center>
+        <center><input type="button" onclick="myReset()" value="Clear Blog Entry"></center>
+<div class="errors">
+</div>
+    </form>
+
   </div>
 </form>
+
+<script src="portfolio.js"></script>
 </body>
 </html>
