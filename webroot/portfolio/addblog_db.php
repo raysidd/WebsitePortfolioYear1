@@ -7,7 +7,7 @@ $dbhost = getenv("MYSQL_SERVICE_HOST");
     // Creates connection
 //$conn = mysqli_connect("localhost","root","","details")
 
-  //  $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+    $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
     if(!$conn){
       die("not connected".mysqli_connect_errors());
     }
