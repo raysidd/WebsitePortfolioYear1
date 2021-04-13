@@ -681,3 +681,11 @@ float: left;
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
 }
+
+.blog-post{
+  margin-left: 20%;
+  margin-right: 60%;
+  padding: 20px;
+  border: solid black 3px;
+  background-color: #f8f8ff;
+}
