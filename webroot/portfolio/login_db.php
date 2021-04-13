@@ -13,7 +13,7 @@ $dbhost = getenv("MYSQL_SERVICE_HOST");
     // Creates connection
     $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
     // Checks connection
-    
+
 //Creating Connection
 
 //$conn = mysqli_connect($servername, $username, $password, $database);
@@ -39,7 +39,7 @@ if (!$conn){
 
       if($count == 1) {
          $_SESSION['Username'] = $Username;
-         header("location: addblog.html");
+         header("location: addblog.php");
       }else {
          $error = "Your Login Name or Password is invalid";
       }
